@@ -22,6 +22,9 @@ jobs:
         sudo apt update
         sudo apt update && sudo apt install python3-pip
         sudo apt -y install python3 cpio wget
+        wget https://pypi.python.org/packages/source/p/pip/pip-18.1.tar.gz
+        tar -zxvf pip-18.1.tar.gz
+        cd pip-18.1
         python3 setup.py build
         python3 setup.py install
         pip3 install twrpdtgen
