@@ -22,8 +22,6 @@ jobs:
         sudo apt update
         sudo apt update && sudo apt install python3-pip
         sudo apt -y install python3 cpio wget
-        python3 setup.py build
-        python3 setup.py install
         pip3 install twrpdtgen
         mkdir dt
       
